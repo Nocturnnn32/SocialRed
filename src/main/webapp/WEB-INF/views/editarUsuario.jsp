@@ -1,17 +1,28 @@
-<%-- 
-    Document   : editarUsuario
-    Created on : 23 jun 2024, 17:24:33
-    Author     : RUBEN
---%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
+<div class="col-md-6 col-md-offset-3">
+	<div class="panel panel-primary">
+			 <div class="panel-heading"><h4>Editar usuario</h4></div>
+  			<div class="panel-body">
+  				<form action="updateuser" method="post">
+       	 <div class="form-group">
+		    <label for="edit-nombre">Nombre</label>
+		    <input type="text" class="form-control" name="update-name" value="${usuario.nombre}">
+		  </div>
+		  <div class="form-group">
+		    <label for="edit-mail">Correo electrónico</label>
+		    <input type="email" class="form-control"  name="update-email" value="${usuario.email}">
+		  </div>
+		  <div class="form-group">
+		    <label for="edit-pwd">Contraseña</label>
+		    <input type="password" class="form-control" name="update-pwd" value="">
+		  </div>
+		  <div class="modal-footer">
+		  	<input type="hidden" name="idUsuario" value="${usuario.id}">
+      		<button type="submit" class="btn btn-success">Guardar</button>
+        	<a href="listadousuarios" class="btn btn-default" >Volver</a>
+      	</div>
+		</form>
+  			</div>
+	</div>
+</div>
