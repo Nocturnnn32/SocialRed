@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.18.xsd
-">
-
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- Root Context: defines shared resources visible to all other web components -->
+	<bean id = "DAOUsuario" class = "com.redsocial.persistencia.DAOUsuario"></bean>
+	<bean id = "DAOPublicacion" class = "com.redsocial.persistencia.DAOPublicacion"></bean>
+	<bean id = "DAOLike" class = "com.redsocial.persistencia.DAOLike"></bean>
+	<bean id = "DAORespuesta" class = "com.redsocial.persistencia.DAORespuesta"></bean>
+	<bean id = "DAOMensajesPrivados" class = "com.redsocial.persistencia.DAOMensajesPrivados"></bean>
 </beans>
