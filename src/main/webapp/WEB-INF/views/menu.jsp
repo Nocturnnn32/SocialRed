@@ -1,5 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<div class="nav-side-menu" style="margin-top:50px">
+<div class="nav-side-menu" style="margin-top:50px; background: #428bca; text-decoration: #000000; ">
     <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
   
         <div class="menu-list">

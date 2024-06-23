@@ -10,6 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="resources/css/wall.css"/>
 	<link rel="stylesheet" type="text/css" href="resources/css/menulateral.css"/>
 	<link rel="stylesheet" type="text/css" href="resources/css/template.css"/>
+        <link rel="stylesheet" type="text/css" href="resources/css/style_menu.css"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="resources/js/publicaciones.js"></script>
@@ -23,9 +24,9 @@
 	</section>	
 	<div class="container">
 
-	<div class="col-md-12">
+            <div class="col-md-12">
 		<aside style="margin-left: 180px;min-height: 600px;">
-			<div style="margin-top: 100px;">
+			<div style="margin-top: 100px;" >
 				<c:if test="${!empty body}">
 					<jsp:include page="${body}.jsp" />
 	   			</c:if>
