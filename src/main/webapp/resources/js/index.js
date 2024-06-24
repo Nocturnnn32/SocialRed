@@ -71,16 +71,16 @@ $( document ).ready(function() {
             }
         },
         messages: {
-            "username": { required: "Introduzca el nombre" },
-            "email": {required: "Introduzca el email" }
+            "username": { required: "\n Introduzca el nombre \n" },
+            "email": {required: "\n Introduzca el email \n" }
         },
 		  submitHandler: function(form) {
 			  var password = $('#password-register').val();
 			  var confirmpwd = $('#confirm-password').val();
 			  if (password!=confirmpwd){
-				  alert("Las contraseñas tienen que ser iguales");
+				  alert("\n Las contraseñas tienen que ser iguales \n");
 			  }else if (password.length<6){
-				  alert("La contraseña tiene que tener más de 6 caracteres");
+				  alert("\n La contraseña tiene que tener más de 6 caracteres \n");
 			  }else{
 				  form.submit();
 			  }

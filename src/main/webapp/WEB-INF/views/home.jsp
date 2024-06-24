@@ -64,7 +64,7 @@
                 <span>o utiliza tu correo electrónico para registrarte</span>
                 <form id="register-form" action="registrar" method="post" class="validate">
                     <div class="type">
-                        <input type="text" name="username" id="username" placeholder="Nombre">
+                        <input type="text" name="username" id="username" placeholder="Nombres Y Apellidos">
                     </div>
                     <div class="type">
                         <input type="email" name="email" id="email" placeholder="Correo Electrónico">
